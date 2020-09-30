@@ -42,13 +42,3 @@ const Reactor = (dataObj) => {
     }
 }
 
-let Character = Reactor(
-    {
-        name: "Jon",
-        lastname: "Snow"
-    }
-)
-
-Character.observe("name", () => console.log(Character.data.name))
-
-Character.data.name = "Ygritte"
