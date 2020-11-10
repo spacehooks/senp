@@ -1,4 +1,4 @@
-const Reactor = (dataObj) => {
+const Trigger = (dataObj) => {
     let signals = {}
     
     const observe = (property, signalHandler) => {
