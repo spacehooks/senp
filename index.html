@@ -6,26 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sling</title>
 
-    <script src="./index.js"></script>
+    <script src="./src/index.js"></script>
+    
 </head>
 
 <body>
-    
     <div id="app">0</div>
 
     <button onclick="Handleclick()">Click me!</button>
-    <script>
 
-        const Num = Trigger({
-            state: 0
-        })
-
-        Num.observe('state', ()=> {document.getElementById('app').innerHTML=`${Num.data.state}` })
-
-        function Handleclick(){
-            Num.data.state += 1
-        }
-    </script>
+    <script src="./tests/main.js"></script>
 </body>
 
 </html>
