@@ -1,0 +1,23 @@
+{
+  "name": "senp",
+  "version": "1.0.0",
+  "description": "A very simple, trigger-based, reactive library for javascript",
+  "main": "npm.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "trigger-based",
+    "reactive"
+  ],
+  "author": "kauan rakoski",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KauanRakoski/Senp.git"
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+}

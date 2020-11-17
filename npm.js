@@ -1,4 +1,4 @@
-const Trigger = (dataObj) => {
+exports.Trigger = (dataObj) => {
     let signals = {}
     
     const observe = (property, signalHandler) => {
@@ -6,11 +6,12 @@ const Trigger = (dataObj) => {
         signals[property].push(signalHandler)
     }
 
-    const notify = (signal, newValue) => {
+    const notify = (signal) => {
         if (!signals[signal] || signals[signal].length < 1) return
 
         signals[signal].forEach((signalHandler) => signalHandler())
     }
+
     const makeReactive = (obj, key) => {
         let val = obj[key]
 
@@ -42,3 +43,8 @@ const Trigger = (dataObj) => {
     }
 }
 
+exports.WatchNode = (node, obj, property) => {
+    node.textContent = obj.data[property]
+  
+    obj.observe(property, value => node.textContent = obj.data[property] || '')
+  }
