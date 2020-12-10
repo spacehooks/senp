@@ -49,5 +49,3 @@ const WatchNode = (node, obj, property) => {
     obj.observe(property, value => node.textContent = obj.data[property] || '')
   }
 
-
-
