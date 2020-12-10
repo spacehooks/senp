@@ -1,6 +1,6 @@
-<h1 align="center">Sling</h1>
+<h1 align="center">Senp</h1>
 
-Sling is a very simple reactive library based on triggers. It was inspired by [this article](https://www.monterail.com/blog/2016/how-to-build-a-reactive-engine-in-javascript-part-1-observable-objects) and is heavily focused on it.
+Senp is a very simple reactive library based on triggers. It was inspired by [this article](https://www.monterail.com/blog/2016/how-to-build-a-reactive-engine-in-javascript-part-1-observable-objects) and is heavily focused on it.
 
 <p align="center">
     <img src="./assets/senp-logo.png" width="25%" height="25%"/> 
