@@ -5,8 +5,10 @@ Senp is a very simple reactive library based on triggers. It was inspired by [th
 <p align="center">
     <img src="./assets/senp-logo.png" width="25%" height="25%"/> 
     <br>
+    <img src="https://img.shields.io/npm/dm/senp.svg"> &nbsp;
     <img src="http://hits.dwyl.com/kauanrakoski/sling.svg"> &nbsp; 
-    <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"> 
+    <img src="https://data.jsdelivr.com/v1/package/npm/senp/badge">
+    
 </p>
 
 ### 📦 Installation
@@ -16,7 +18,7 @@ Install via npm:
     npm install senp
 ```
 
-Use cdn>
+Use cdn:
 ```html
     <script src="https://cdn.jsdelivr.net/gh/hipesoft/senp/src/index.js"></script>
 ```
