@@ -1,17 +1,13 @@
-let div = document.getElementById('app')
-
+/* let div = document.getElementById('app')
+ */
 const Num = Trigger({
-    state: 0
+    state: []
 })
 
-/*  For normal triggers, use observe:
-
-    Num.observe('state', ()=> {document.getElementById('app').innerHTML=`${Num.data.state}` }) 
-*/
-
 function Handleclick() {
-    Num.data.state += 1
+    Num.data.state.push('Hello')
 }
 
-// For automatic content changes in a Node, use WatchNode
-WatchNode(div, Num, 'state')
+console.log(Num.data.state)
+Handleclick()
+console.log(Num.data.state.length)

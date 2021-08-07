@@ -1,6 +1,6 @@
 const Trigger = (dataObj) => {
     let signals = {}
-    
+
     const observe = (property, signalHandler) => {
         if (!signals.property) signals[property] = []
         signals[property].push(signalHandler)
@@ -21,6 +21,14 @@ const Trigger = (dataObj) => {
             },
             set(newValue) {
                 val = newValue
+                notify(key)
+            },
+            push(newValue) {
+                if (!isArray(val)) {
+                    throw new Error('Object is not an array.')
+                }
+
+                Array.prototype.push(val, newValue)
                 notify(key)
             }
         })
@@ -45,7 +53,11 @@ const Trigger = (dataObj) => {
 
 const WatchNode = (node, obj, property) => {
     node.textContent = obj.data[property]
-  
+
     obj.observe(property, value => node.textContent = obj.data[property] || '')
-  }
+}
+
+const isArray = value => {
+    return Object.prototype.toString.call(val) === '[object Array]'
+}
 
